@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="col-sm-offset-2 col-sm-8">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <td>Name</td>
+        <td>Alcohol Content</td>
+        <td>Score</td>
+      </tr>
+    </thead>
+  <tbody>
+  <% @beers.each do |beer| %>
+  <tr>
+    <td><%= link_to beer.name,"/beer/"+beer.name  %></td>
+    <td><%= beer.alc %></td>
+    <td><%= beer.best_value.price_score %></td>
+  </tr>
+  <% end %>
+</tbody>
+  </table>
+</div>
+</div>

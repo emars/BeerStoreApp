@@ -1,0 +1,29 @@
+<div class="col-sm-offset-3 col-sm-6">
+<div class="panel panel-default">
+  <div class="panel-body">
+    <p class="text-center"><b><%= @beer.name.titleize %></p></b>
+    <table class="table table-bordered">
+      <tr>
+        <td class="text-center">Quantity:</td>
+        <td class="text-center"><%= @beer.best_value.quantity %></td>
+      </tr>
+      <tr>
+        <td class="text-center">Type:</td>
+        <td class="text-center"><%= @beer.best_value.container_type %></td>
+      </tr>
+
+      <tr>
+        <td class="text-center">Volume:</td>
+        <td class="text-center"><%= @beer.best_value.volume %> ml</td>
+      </tr>
+      <tr>
+
+      </tr>
+      <tr>
+        <td class="text-center">Price:</td>
+        <td class="text-center">$<%= @beer.best_value.price %></td>
+      </tr>
+
+    </table>
+  </div>
+</div>

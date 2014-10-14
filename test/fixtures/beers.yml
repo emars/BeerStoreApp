@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  header: MyString
+  category: MyString
+  brewer: MyString
+  alc: MyString
+  description: MyString
+  tags: MyString
+
+two:
+  name: MyString
+  header: MyString
+  category: MyString
+  brewer: MyString
+  alc: MyString
+  description: MyString
+  tags: MyString

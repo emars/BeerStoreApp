@@ -1,0 +1,90 @@
+<div class="container">
+
+
+<div class="col-sm-6">
+  <h6 class="text-center">Popular Beers</h6>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <td>Rank</td>
+        <td>Name</td>
+        <td>Size</td>
+        <td>Quantity</td>
+        <td>Type</td>
+        <td>Price</td>
+        <td>ml/$</td>
+      </tr>
+    </thead>
+    <tbody>
+  <% @popular.each do |beer| %>
+  <tr>
+    <td>?</td>
+<td><%= beer.name.titleize %></td>
+<td><%= beer.best_value.volume %> ml</td>
+<td><%= beer.best_value.quantity %></td>
+<td><%= beer.best_value.container_type %></td>
+<td><%= beer.best_value.price %></td>
+<td><%= beer.best_value.price_score %></td>
+  </td>
+  <% end %>
+</tbody>
+</table>
+</div>
+
+<div class="col-sm-6">
+  <h6 class="text-center">Top 5 Beers by Value</h6>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <td>Rank</td>
+        <td>Name</td>
+        <td>Size</td>
+        <td>Quantity</td>
+        <td>Type</td>
+        <td>Price</td>
+        <td>ml/$</td>
+      </tr>
+    </thead>
+    <tbody>
+    <% i = 0 %>
+    <% @best_5.each do |beer| %>
+      <tr>
+        <td class="text-center"><%= i+=1 %></td>
+        <td><%= beer.name.titleize %></td>
+        <td><%= beer.best_value.volume %> ml</td>
+        <td><%= beer.best_value.quantity %></td>
+        <td><%= beer.best_value.container_type %></td>
+        <td><%= beer.best_value.price %></td>
+        <td><%= beer.best_value.price_score %></td>
+      </tr>
+    <% end %>
+  </tbody>
+  </table>
+  <h6 class="text-center">Bottom 5 Beers by Value</h6>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <td>Rank</td>
+        <td>Name</td>
+        <td>Size</td>
+        <td>Quantity</td>
+        <td>Type</td>
+        <td>Price</td>
+        <td>ml/$</td>
+      </tr>
+    </thead>
+    <tbody>
+    <% @worst_5.each do |beer| %>
+      <tr>
+        <td class="text-center"><%= @count-=1 %></td>
+        <td><%= beer.name.titleize %></td>
+        <td><%= beer.worst_value.volume %> ml</td>
+        <td><%= beer.worst_value.quantity %></td>
+        <td><%= beer.worst_value.container_type %></td>
+        <td><%= beer.worst_value.price %></td>
+        <td><%= beer.worst_value.price_score %></td>
+      </tr>
+    <% end %>
+  </tbody>
+  </table>
+</div>
