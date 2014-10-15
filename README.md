@@ -23,6 +23,7 @@ rake db:migrate
 rake db:seed
 rails s
 ```
+Note that seeding takes a couple minutes as it must query thebeerstore.ca for all pricing.
 
 Now Point your browser to http://localhost:3000 and you should see the home page
 sorting the top 5 and bottom 5 beers.
