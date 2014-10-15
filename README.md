@@ -19,6 +19,7 @@ them in a database.
 git clone https://github.com/emars/BeerStoreApp.git
 cd BeerStoreApp
 bundle install
+rake db:migrate
 rake db:seed
 rails s
 ```
