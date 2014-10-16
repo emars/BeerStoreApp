@@ -1,5 +1,5 @@
 <h1>Beer Search Result</h1>
-<% if @beer.name %>
+<% unless @beer.nil? %>
   <h3><%= @beer.name %></h3>
   <p><%= @beer.description %></p>
 <% else %>
