@@ -3,7 +3,8 @@ Rails.application.routes.draw do
 
   get 'home/index'
   root 'home#index'
-  get '/beer/:name', to: 'beer#index'
+  #get '/beer/:name', to: 'beer#index'
+  get '/beer/search', to: 'beer#search'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

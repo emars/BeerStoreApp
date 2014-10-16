@@ -1,0 +1,7 @@
+<h1>Beer Search Result</h1>
+<% if @beer.name %>
+  <h3><%= @beer.name %></h3>
+  <p><%= @beer.description %></p>
+<% else %>
+<h3>no beer found by that name: <%= @query %></h3>
+<% end %>
