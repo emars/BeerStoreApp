@@ -27,6 +27,3 @@ Note that seeding takes a couple minutes as it must query thebeerstore.ca for al
 
 Now Point your browser to http://localhost:3000 and you should see the home page
 sorting the top 5 and bottom 5 beers.
-
-
-This line is to keep my github commit streak goin
