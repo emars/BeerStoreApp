@@ -1,5 +1,10 @@
 #The Beer Store App (Pending good name)
 
+[![http://www.gtools.club/plusone/569bcae71ba8eb110044e383](http://www.gtools.club/plusone/569bcae71ba8eb110044e383)](http://www.gtools.club/plusone/569bcae71ba8eb110044e383/vote)
+
+[![+1 counter](http://127.0.0.1:3030/plusone/569ad70c15cf268220634143)](http://127.0.0.1:3030/plusone/569ad70c15cf268220634143/vote)
+
+
 ######NOTE: This app is still very much a work in progress
 
 ###About
